@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+
+Sitemap: analogueitsolutions.com/sitemap.xml
