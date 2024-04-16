@@ -11935,3 +11935,39 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
 .custom-hero-dmc {
   padding: 280px 0 195px 0;
 }
+
+/* Pop up contact form
+ */
+.pop-up-form {
+  display: none;
+
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  height: auto;
+  top: 10%;
+}
+.pop-up-contact-form {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.pop-up-form-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.pop-up-form-close-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 525px) {
+  .pop-up-form {
+    top: 20px;
+  }
+  .pop-up-contact-form {
+    width: 300px;
+  }
+}
