@@ -11938,19 +11938,24 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
 
 /* Pop up contact form
  */
-.pop-up-form {
-  display: none;
 
+.pop-up-form {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  display: none;
   width: 100%;
-  position: absolute;
-  z-index: 50;
-  height: auto;
-  top: 10%;
+  height: 100vh;
+  position: fixed;
+  z-index: 55;
+  top: 0;
+  padding-top: 5%;
 }
+
 .pop-up-contact-form {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
   width: 600px;
 }
 
@@ -11965,9 +11970,10 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
 
 @media (max-width: 525px) {
   .pop-up-form {
-    top: 20px;
+    overflow-y: auto;
   }
   .pop-up-contact-form {
     width: 300px;
+    margin-top: 15px;
   }
 }

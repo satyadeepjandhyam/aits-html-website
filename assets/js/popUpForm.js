@@ -14,9 +14,9 @@
   }
 
   // Show the pop-up form when the page loads
-  window.addEventListener("load", function () {
+  setTimeout(function () {
     showPopUpForm();
-  });
+  }, 5000);
 
   // Handle close button click
   document
