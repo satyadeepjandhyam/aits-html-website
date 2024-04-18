@@ -11982,3 +11982,13 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
     margin-top: 15px;
   }
 }
+
+/*used in following pages
+ java app development company, 
+ ecommerce app dev...
+ google cloud platform
+ node js app dev.... */
+.custom-hero-title {
+  font-size: 60px;
+  color: black;
+}
