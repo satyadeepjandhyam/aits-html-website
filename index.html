@@ -3294,109 +3294,112 @@
       </svg>
     </div>
     <div class="pop-up-form">
-      <div class="test-close"></div>
       <div class="pop-up-contact-form">
-        <div
-          class="contact-form1 form-wrapper"
-          data-bg-src="assets/img/bg/contact_bg_2.png"
-        >
-          <h3 class="box-title">
-            Let Us Elevate Your Projects With Our Skills
-          </h3>
-          <p class="box-text">
-            Get a Quote from a Top Mobile App Development Company
-          </p>
-          <form id="form-two" class="input-label">
-            <div class="row">
-              <div class="form-group line-input col-sm-6">
-                <input
-                  name="name"
-                  type="text"
-                  class="form-control"
-                  autocomplete="on"
-                  id="name"
-                  required
-                />
-                <label for="name">Your Name*</label>
-              </div>
-              <div class="form-group line-input col-sm-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  autocomplete="on"
-                  name="email"
-                  id="email"
-                  required
-                />
-                <label for="email">Your Email*</label>
+        <div class="form-wrapper">
+          <div
+            class="contact-form1"
+            data-bg-src="assets/img/bg/contact_bg_2.png"
+          >
+            <h3 class="box-title">
+              Let Us Elevate Your Projects With Our Skills
+            </h3>
+            <p class="box-text">
+              Get a Quote from a Top Mobile App Development Company
+            </p>
+            <form id="form-two" class="input-label">
+              <div class="row">
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    autocomplete="on"
+                    id="name"
+                    required
+                  />
+                  <label for="name">Your Name*</label>
+                </div>
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    autocomplete="on"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <label for="email">Your Email*</label>
+                </div>
+
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    name="Phone"
+                    pattern="[0-9]{10}"
+                    autocomplete="on"
+                    maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                    type="tel"
+                    class="form-control"
+                    id="number"
+                    required
+                  />
+                  <label for="number">Phone Number*</label>
+                </div>
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    autocomplete="on"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                  <label for="subject">Subject...</label>
+                </div>
+                <div class="form-group line-input col-12">
+                  <select
+                    class="form-select pb-10 mb-3"
+                    name="reach"
+                    id="reach"
+                    required
+                  >
+                    <option value="">How Do You Reach Us?</option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="instagram">instagram</option>
+                    <option value="LinkedIn">Linkedin</option>
+                    <option value="Google Maps">Google Maps</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <div class="form-group line-input col-12 pt-45">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    autocomplete="on"
+                    rows="1"
+                    class="form-control"
+                    required
+                  ></textarea>
+                  <label for="message">Your Message*</label>
+                </div>
+                <div class="form-btn col-12 mt-10">
+                  <button type="submit" class="ot-btn style3">
+                    Get a Quote
+                  </button>
+                </div>
               </div>
 
-              <div class="form-group line-input col-sm-6">
-                <input
-                  name="Phone"
-                  pattern="[0-9]{10}"
-                  autocomplete="on"
-                  maxlength="10"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                  type="tel"
-                  class="form-control"
-                  id="number"
-                  required
-                />
-                <label for="number">Phone Number*</label>
-              </div>
-              <div class="form-group line-input col-sm-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  autocomplete="on"
-                  name="subject"
-                  id="subject"
-                  required
-                />
-                <label for="subject">Subject...</label>
-              </div>
-              <div class="form-group line-input col-12">
-                <select
-                  class="form-select pb-10 mb-3"
-                  name="reach"
-                  id="reach"
-                  required
-                >
-                  <option value="">How Do You Reach Us?</option>
-                  <option value="Google">Google</option>
-                  <option value="Facebook">Facebook</option>
-                  <option value="instagram">instagram</option>
-                  <option value="LinkedIn">Linkedin</option>
-                  <option value="Google Maps">Google Maps</option>
-                  <option value="Others">Others</option>
-                </select>
-              </div>
-              <div class="form-group line-input col-12 pt-45">
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  autocomplete="on"
-                  rows="1"
-                  class="form-control"
-                  required
-                ></textarea>
-                <label for="message">Your Message*</label>
-              </div>
-              <div class="form-btn col-12 mt-10">
-                <button type="submit" class="ot-btn style3">Get a Quote</button>
-              </div>
-            </div>
-
-            <p class="form-messages mb-0 mt-3"></p>
-          </form>
+              <p class="form-messages mb-0 mt-3"></p>
+            </form>
+          </div>
+          <img
+            src="./assets/img/shape/close-icon.png"
+            alt="close-button"
+            class="pop-up-form-close-btn"
+          />
         </div>
-        <img
-          src="./assets/img/shape/close-icon.png"
-          alt="close-button"
-          class="pop-up-form-close-btn"
-        />
       </div>
     </div>
     <!-- <div class="blur-bg-layer"></div> -->
