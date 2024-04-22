@@ -128,7 +128,7 @@ formTwo.addEventListener("submit", (e) => {
         formTwo.reach.options.selectedIndex = 0;
         setTimeout(() => {
           hidePopUpForm();
-        }, 2000);
+        }, 1000);
       }
     });
   }
