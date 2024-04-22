@@ -1791,6 +1791,178 @@
         ></path>
       </svg>
     </div>
+    <div class="pop-up-form">
+      <div class="pop-up-contact-form">
+        <div class="form-wrapper">
+          <div
+            class="contact-form1"
+            data-bg-src="assets/img/bg/contact_bg_2.png"
+          >
+            <h3 class="box-title">
+              Let Us Elevate Your Projects With Our Skills
+            </h3>
+            <p class="box-text">
+              Get a Quote from a Top Mobile App Development Company
+            </p>
+            <form id="form-two" class="input-label">
+              <div class="row">
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    autocomplete="on"
+                    id="name"
+                    required
+                  />
+                  <label for="name">Your Name*</label>
+                </div>
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    autocomplete="on"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <label for="email">Your Email*</label>
+                  <span
+                    id="email-errorF2"
+                    style="
+                      color: red;
+                      display: none;
+                      font-size: 12px;
+                      margin-top: -10px;
+                      margin-bottom: 15px;
+                    "
+                    >Enter a valid email address</span
+                  >
+                </div>
+
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    name="Phone"
+                    pattern="[0-9]{10}"
+                    autocomplete="on"
+                    maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                    type="tel"
+                    class="form-control"
+                    id="number"
+                    required
+                  />
+                  <label for="number">Phone Number*</label>
+                </div>
+                <div class="form-group line-input col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    autocomplete="on"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                  <label for="subject">Subject...</label>
+                </div>
+                <div class="form-group line-input col-12">
+                  <select
+                    class="form-select pb-10 mb-3"
+                    name="reach"
+                    id="reach"
+                    required
+                  >
+                    <option value="">How Do You Reach Us?</option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="instagram">instagram</option>
+                    <option value="LinkedIn">Linkedin</option>
+                    <option value="Google Maps">Google Maps</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <div class="form-group line-input col-12 pt-45">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    autocomplete="on"
+                    rows="1"
+                    class="form-control"
+                    required
+                  ></textarea>
+                  <label for="message">Your Message*</label>
+                </div>
+                <div
+                  class="form-btn col-12 mt-10 custom-form-footer"
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="submit"
+                    class="ot-btn style3"
+                    style="margin-bottom: 10px"
+                  >
+                    Get a Quote
+                  </button>
+                  <span style="font-size: 15px; color: white; margin: 10px"
+                    >Or</span
+                  >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div>
+                      <p
+                        style="
+                          margin: 0;
+                          color: white;
+                          text-decoration: underline;
+                        "
+                      >
+                        Call us now
+                      </p>
+                    </div>
+                    <div style="display: flex; gap: 8px">
+                      <a
+                        onmouseover="this.style.textDecoration='underline';"
+                        onmouseout="this.style.textDecoration='none';"
+                        style="color: white; text-decoration: none"
+                        href="tel:+91 89190 88163"
+                        >+91 89190 88163</a
+                      >
+                      <a
+                        onmouseover="this.style.textDecoration='underline';"
+                        onmouseout="this.style.textDecoration='none';"
+                        style="color: white; text-decoration: none"
+                        href="tel:+91 6309423978"
+                        >+91 6309423978</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="form-messages mb-0 mt-3"></p>
+            </form>
+          </div>
+          <img
+            src="./assets/img/shape/close-icon.png"
+            alt="close-button"
+            class="pop-up-form-close-btn"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/popUpForm.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/main.js"></script>

@@ -11972,13 +11972,16 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
   cursor: pointer;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 610px) {
   .pop-up-form {
     overflow-y: auto;
   }
   .pop-up-contact-form {
-    width: 300px;
+    width: 95%;
     margin-top: 15px;
+  }
+  .custom-form-footer {
+    flex-direction: column;
   }
 }
 
@@ -11992,3 +11995,5 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
   font-size: 60px;
   color: black;
 }
+
+//home form

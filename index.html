@@ -3046,6 +3046,17 @@
                       required
                     />
                     <label for="email">Your Email*</label>
+                    <span
+                      id="email-errorF1"
+                      style="
+                        color: red;
+                        display: none;
+                        font-size: 12px;
+                        margin-top: -10px;
+                        margin-bottom: 15px;
+                      "
+                      >Enter a valid email address</span
+                    >
                   </div>
 
                   <div class="form-group line-input col-sm-6">
@@ -3107,7 +3118,6 @@
                     </button>
                   </div>
                 </div>
-
                 <p class="form-messages mb-0 mt-3"></p>
               </form>
             </div>
@@ -3329,6 +3339,17 @@
                     required
                   />
                   <label for="email">Your Email*</label>
+                  <span
+                    id="email-errorF2"
+                    style="
+                      color: red;
+                      display: none;
+                      font-size: 12px;
+                      margin-top: -10px;
+                      margin-bottom: 15px;
+                    "
+                    >Enter a valid email address</span
+                  >
                 </div>
 
                 <div class="form-group line-input col-sm-6">
@@ -3384,10 +3405,61 @@
                   ></textarea>
                   <label for="message">Your Message*</label>
                 </div>
-                <div class="form-btn col-12 mt-10">
-                  <button type="submit" class="ot-btn style3">
+                <div
+                  class="form-btn col-12 mt-10 custom-form-footer"
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="submit"
+                    class="ot-btn style3"
+                    style="margin-bottom: 10px"
+                  >
                     Get a Quote
                   </button>
+                  <span style="font-size: 15px; color: white; margin: 10px"
+                    >Or</span
+                  >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div>
+                      <p
+                        style="
+                          margin: 0;
+                          color: white;
+                          text-decoration: underline;
+                        "
+                      >
+                        Call us now
+                      </p>
+                    </div>
+                    <div style="display: flex; gap: 8px">
+                      <a
+                        onmouseover="this.style.textDecoration='underline';"
+                        onmouseout="this.style.textDecoration='none';"
+                        style="color: white; text-decoration: none"
+                        href="tel:+91 89190 88163"
+                        >+91 89190 88163</a
+                      >
+                      <a
+                        onmouseover="this.style.textDecoration='underline';"
+                        onmouseout="this.style.textDecoration='none';"
+                        style="color: white; text-decoration: none"
+                        href="tel:+91 6309423978"
+                        >+91 6309423978</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
 
