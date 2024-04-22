@@ -1056,6 +1056,7 @@
                       autocomplete="on"
                       rows="1"
                       class="form-control"
+                      oninput="this.value = this.value.replace(/[^a-zA-Z0-9@.,?]/g, '');"
                       required
                     ></textarea>
                     <label for="message">Your Message*</label>
