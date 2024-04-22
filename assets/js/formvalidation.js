@@ -4,6 +4,7 @@ let emailErrorF1 = document.getElementById("email-errorF1");
 let emailErrorF2 = document.getElementById("email-errorF2");
 let error = document.getElementById("error");
 let tost = document.createElement("div");
+var popUpForm = document.querySelector(".pop-up-form");
 
 formOne.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -125,7 +126,14 @@ formTwo.addEventListener("submit", (e) => {
         formTwo.subject.value = "";
         formTwo.message.value = "";
         formTwo.reach.options.selectedIndex = 0;
+        setTimeout(() => {
+          hidePopUpForm();
+        }, 2000);
       }
     });
   }
 });
+
+function hidePopUpForm() {
+  popUpForm.style.display = "none";
+}
