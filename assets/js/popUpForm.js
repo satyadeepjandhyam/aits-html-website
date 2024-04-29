@@ -24,4 +24,33 @@
     .addEventListener("click", function () {
       hidePopUpForm();
     });
+    document.querySelectorAll(".pop-up-sidebar").forEach(function(element) {
+      element.addEventListener("click", function() {
+          showPopUpForm();
+      });
+  });
+    // document
+    // .getElementById("pop-up-sidebar")
+    // .addEventListener("click", function () {
+    //   showPopUpForm();
+    // });
+    // document
+    // .getElementById("pop-up-sidebar1")
+    // .addEventListener("click", function () {
+    //   showPopUpForm();
+    // });
+    // document
+    // .getElementById("pop-up-sidebar2")
+    // .addEventListener("click", function () {
+    //   showPopUpForm();
+    // });
+    // document
+    // .getElementById("pop-up-sidebar-ourservice")
+    // .addEventListener("click", function () {
+    //   showPopUpForm();
+    // });
+    // document
+    // .getElementById("pop-up-sidebar-digital").addEventListener("click", function () {
+    //   showPopUpForm();
+    // });
 })();

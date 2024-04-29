@@ -1,3 +1,5 @@
+<!-- "assets/img/blog/recent-post-1-1.jpg" -->
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
   <head>
@@ -61,7 +63,10 @@
       <button class="ot-btn preloaderCls style3">Cancel Preloader</button>
       <div class="preloader-inner"><span class="loader"></span></div>
     </div>
-    <div class="ot-menu-wrapper">
+    <script src="./templates/HeaderTemplate.js"></script>
+    <special-header></special-header>
+
+    <!-- <div class="ot-menu-wrapper">
       <div class="ot-menu-area text-center">
         <button class="ot-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
@@ -241,8 +246,8 @@
           </ul>
         </div>
       </div>
-    </div>
-    <header class="ot-header header-layout1">
+    </div> -->
+    <!-- <header class="ot-header header-layout1">
       <div class="header-top">
         <div class="container">
           <div
@@ -257,7 +262,6 @@
                   <li class="d-none d-sm-inline-block">
                     <div class="links-menu">
                       <ul>
-                        <!-- <li><a href="blog">Blog</a></li> -->
                       </ul>
                     </div>
                   </li>
@@ -292,11 +296,7 @@
                   <ul>
                     <li>
                       <a href="/">Home</a>
-                      <!-- <ul class="sub-menu">
-                                            <li><a href="/">Home One</a></li>
-                                            <li><a href="/-3">Home Two</a></li>
-                                            <li><a href="/-4">Home Three</a></li>
-                                        </ul> -->
+
                     </li>
                     <li><a href="about">About Us</a></li>
                     <li class="menu-item-has-children">
@@ -324,15 +324,7 @@
                         </li>
                       </ul>
                     </li>
-                    <!-- <li class="menu-item-has-children"><a href="#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="team">Team</a></li>
-                                            <li><a href="team-details">Team Details</a></li>
-                                            <li><a href="pricing">Pricing Plans</a></li>
-                                            <li><a href="project">Project Gallery</a></li>
-                                            <li><a href="project-details">Project Details</a></li>
-                                        </ul>
-                                    </li> -->
+
                     <li class="menu-item-has-children">
                       <a href="#">Technologies</a>
                       <ul class="sub-menu d-flex">
@@ -553,7 +545,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
       <div class="container">
         <div class="breadcumb-content">
@@ -1169,7 +1161,11 @@
       </div>
     </div>
     <div id="error"></div>
-    <footer
+ 
+    <special-footer></special-footer>
+
+    <script src="./templates/FooterTemplate.js"></script>
+    <!-- <footer
       class="footer-wrapper footer-layout1"
       data-bg-src="assets/img/bg/footer_bg_1.jpg"
     >
@@ -1249,32 +1245,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Recent Posts</h3>
-                            <div class="recent-post-wrap">
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details1"><img
-                                                src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details1">How to choose the right mobile app development platform?</a></h4>
-                                        <div class="recent-post-meta"><a href="blog"><i
-                                                    class="far fa-calendar"></i>21 Jun, 2023</a></div>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details"><img
-                                                src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details">Get
-                                                Started With Our Team</a></h4>
-                                        <div class="recent-post-meta"><a href="blog"><i
-                                                    class="far fa-calendar"></i>22 Jun, 2023</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+            
           </div>
         </div>
       </div>
@@ -1328,8 +1299,8 @@
           </p>
         </div>
       </div>
-    </footer>
-    <div class="scroll-top">
+    </footer> -->
+    <div class="scroll-top" style="margin-bottom: 100px;">
       <svg
         class="progress-circle svg-content"
         width="100%"
@@ -1519,29 +1490,12 @@
       </div>
     </div>
     <script src="assets/js/popUpForm.js"></script>
+    <script src="assets/js/whatupclick.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/formvalidation.js"></script>
+    <script src="assets/js/formvalidation.js"></script>    
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({
-        // reset:true,
-        distance: "60px",
-        duration: 2500,
-        delay: 400,
-      });
-
-      ScrollReveal().reveal(".steps_head, .banner_content, .help_div", {
-        delay: 400,
-        origin: "left",
-      });
-      ScrollReveal().reveal(".footer-layout1, #contact-sec, #about-sec", {
-        delay: 200,
-        origin: "bottom",
-      });
-    </script>
   </body>
   <!-- Mirrored from html.onertheme.com/tronix/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2023 09:05:06 GMT -->
 </html>

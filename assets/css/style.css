@@ -18,7 +18,7 @@
   --title-font: "Outfit", sans-serif;
   --body-font: "Hanken Grotesk", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
-  --main-container: 1220px;
+  --main-container: 1320px;
   --container-gutters: 24px;
   --section-space: 120px;
   --section-space-mobile: 80px;
@@ -1289,7 +1289,7 @@ textarea.is-invalid {
   box-shadow: none;
 }
 .testi-card .box-text {
-  height: 200px;
+  height: 140px;
 }
 .slick-3d-active .slick-3d-prev2 {
   opacity: 1;
@@ -6065,6 +6065,13 @@ blockquote .desig {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
+.blog-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .blog-title a {
   color: inherit;
@@ -6121,6 +6128,13 @@ blockquote .desig {
   font-size: 36px;
   line-height: 1.25;
   font-weight: 500;
+}
+.blog-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-single .blog-text {
@@ -10008,7 +10022,7 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
 .service-card {
   background-color: var(--white-color);
   position: relative;
-  height: 500px;
+  height: auto;
   width: 280px;
   z-index: 2;
   padding: 40px;
@@ -11996,4 +12010,68 @@ ul.comment-list:has(> .ot-comment-item ~ .ot-comment-item):first-child
   color: black;
 }
 
-//home form
+.position-contact{
+  display: flex;
+  flex-direction: column;
+  max-width: 150px ;
+  gap: 10px;
+
+}
+.position-contact-btn{
+  position: fixed;
+  top:50vh;
+  left:-95px;
+}
+.position-contact-btn:hover{
+  left: 0;
+}
+.position-contact-btn1{
+  position: fixed;
+  top:61vh;
+  left:-110px;
+}
+.position-contact-btn1:hover{
+  left: 0;
+}
+.con-btn{
+  color: black;
+  background-color: #d0dfffda;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px ;
+  font-size: 18px;
+  border: none;
+}
+.position-contact-btn img{
+ width:40px;
+ margin: 4.8px;
+
+}
+.position-contact-btn1 img{
+width:55px;
+  margin-left: 4px;
+}
+.blog-head-img{
+  width: 100%;
+  max-height: 530px;
+}
+#blog-img-detials{
+  max-height: 421px;
+}
+#blog-descreption-detials{
+  text-align: justify;
+}
+
+@media (max-width: 610px) {
+  .position-contact-btn1 {
+    left: -125px;
+  }
+  .position-contact-btn {
+    left: -110px;
+   }
+}
+.row p{
+  text-align: justify;
+  word-spacing: 0.5px !important;
+  letter-spacing: -0.5px !important;
+  /* max-width: 90%; */
+}

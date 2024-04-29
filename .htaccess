@@ -33,3 +33,11 @@ RewriteCond %{Request_FILENAME} !-d
 RewriteCond %{Request_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
+
+#remove html file extension https://analogueitsolutions.com/blog.html
+# to https://analogueitsolutions.com/blog
+RewriteEngine on 
+RewriteCond %{Request_FILENAME} !-d
+RewriteCond %{Request_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
