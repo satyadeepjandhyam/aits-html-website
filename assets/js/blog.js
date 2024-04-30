@@ -87,7 +87,7 @@ function fetchData(page) {
         const blogAuthor = document.createElement('a');
         blogAuthor.classList.add('author');
         blogAuthor.href = `blog-details.html?id=${title}`;
-        const textNodeAuthor = document.createTextNode("By Tronix");
+        const textNodeAuthor = document.createTextNode("By Analogue");
         const authorIcon = document.createElement('i');
         authorIcon.classList.add('far', 'fa-user');
 

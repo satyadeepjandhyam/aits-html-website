@@ -67,7 +67,7 @@ function isVideo(url) {
         const blogAuthor = document.createElement('a');
         blogAuthor.classList.add('author');
         blogAuthor.href = "#";
-        const textNodeAuthor = document.createTextNode("By Tronix");
+        const textNodeAuthor = document.createTextNode("By Analogue");
         const authorIcon = document.createElement('i');
         authorIcon.classList.add('far', 'fa-user');
 

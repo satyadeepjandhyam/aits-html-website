@@ -2154,6 +2154,7 @@ textarea.is-invalid {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: -0.28em;
+  min-height: 50px;
 }
 
 .box-title a {
@@ -12068,10 +12069,4 @@ width:55px;
   .position-contact-btn {
     left: -110px;
    }
-}
-.row p{
-  text-align: justify;
-  word-spacing: 0.5px !important;
-  letter-spacing: -0.5px !important;
-  /* max-width: 90%; */
 }

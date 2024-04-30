@@ -190,26 +190,28 @@ class FooterTemplate extends HTMLElement {
                  <h3 class="widget_title">About Us</h3>
                  <div class="ot-widget-about">
                    <p class="footer-text">
-                     An IT consultancy can help you assess your technology needs
-                     and develop a technology strategy that aligns with your
-                     business
+                   Analogue is the Best Mobile App Development Company in Hyderabad, India. We are the skilled in Mobile App Development, E-Commerce Development, and Web Development
                    </p>
                    <div class="ot-social">
-                     <a href="https://www.facebook.com/"
+                     <a href="https://www.facebook.com/analogueitsolutions" target="_blank"
                        ><i class="fab fa-facebook-f"></i
                      ></a>
-                     <a href="https://www.twitter.com/"
+                     <a href="https://www.instagram.com/analogueitsolutions" target="_blank"
+                       ><i class="fab fa-instagram"></i
+                     ></a>
+                     <a href="https://twitter.com/analogitt?lang=en" target="_blank"
                        ><i class="fab fa-twitter"></i
                      ></a>
-                     <a href="https://www.linkedin.com/"
+                     <a href="https://www.linkedin.com/company/analogueitsolutions/" target="_blank"
                        ><i class="fab fa-linkedin-in"></i
                      ></a>
-                     <a href="https://www.whatsapp.com/"
+                     <a href="https://wa.me/+916309423978" target="_blank"
                        ><i class="fab fa-whatsapp"></i
                      ></a>
-                     <a href="https://www.youtube.com/"
+                     <a href="https://www.youtube.com/channel/UCwXs3Dw3somrW0sNyDDLEBg" target="_blank"
                        ><i class="fab fa-youtube"></i
                      ></a>
+                     
                    </div>
                  </div>
                </div>
@@ -234,14 +236,13 @@ class FooterTemplate extends HTMLElement {
              </div>
              <div class="col-md-6 col-xl-auto">
                <div class="widget widget_nav_menu footer-widget">
-                 <h3 class="widget_title">Explore</h3>
+                 <h3 class="widget_title">Our Services</h3>
                  <div class="menu-all-pages-container">
                    <ul class="menu">
-                     <li><a href="service.html">What We Offer</a></li>
-                     <li><a href="about.html">Our Story</a></li>
-                     <li><a href="blog.html">Latest Posts</a></li>
-                     <li><a href="about.html">Help Center</a></li>
-                     <li><a href="contact.html">Get Support</a></li>
+                     <li><a href="ui-ux-design-company-in-hyderabad.html">Ui Ux development</a></li>
+                     <li><a href="website-development-company-in-hyderabad.html">Web Development</a></li>
+                     <li><a href="mobile-app-development-company-in-hyderabad.html">Mobile App Development</a></li>
+                     <li><a href="digital-marketing-company-in-hyderabad.html">Digital Marketing</a></li>
                    </ul>
                  </div>
                </div>
@@ -266,7 +267,7 @@ class FooterTemplate extends HTMLElement {
                </div>
                <div class="media-body">
                  <h4 class="box-title">Location</h4>
-                 <p class="box-text">258 Daniel Mansion 258 Berlin Germany</p>
+                 <p class="box-text">1-98/4/64, Jaya Vijaya Plaza, Vittal Rao Nagar, Mindspace, Madhapur, Hyderabad-500081.</p>
                </div>
              </div>
              <div class="divider"></div>
@@ -275,8 +276,8 @@ class FooterTemplate extends HTMLElement {
                <div class="media-body">
                  <h4 class="box-title">Working Hours</h4>
                  <p class="box-text">
-                   <span>Weekdays 8am - 22pm</span><br /><span
-                     >Weekend 10am - 12pm</span
+                   <span>Monday - Saturday</span><br /><span
+                     >10am - 7pm</span
                    >
                  </p>
                </div>
