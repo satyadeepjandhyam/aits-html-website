@@ -1,5 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
                 const titleParam = urlParams.get('id'); // Get the 'id' parameter from the URL
+
+const formattedTitleParam = titleParam.replace(/-/g, ' '); // Replace dashes with spaces
+console.log(formattedTitleParam, "title")
                 console.log(titleParam)
 
 
@@ -28,7 +31,7 @@ function isVideo(url) {
         const month = monthNames[dateObj.getMonth()];
         const year = dateObj.getFullYear();
         const formattedDate = `${day} ${month}, ${year}`;
-        if(title==titleParam){
+        if(title==formattedTitleParam){
             const filenameWithExtension = `https://admin.analogueitsolutions.satyasadhna.com${mainPic}`;
             console.log(filenameWithExtension);
 
