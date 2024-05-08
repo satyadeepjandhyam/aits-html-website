@@ -1,11 +1,24 @@
 const urlParams = new URLSearchParams(window.location.search);
+const oldUrl = window.location.pathname;
                 const titleParam = urlParams.get('id'); // Get the 'id' parameter from the URL
+                const formattedTitleParam = titleParam.replace(/-/g, ' '); // Replace dashes with spaces
 
-const formattedTitleParam = titleParam.replace(/-/g, ' '); // Replace dashes with spaces
+                
 console.log(formattedTitleParam, "title")
                 console.log(titleParam)
 
+                // const encodedTitleParam = encodeURIComponent(`/${titleParam}`);
+                // const newUrl = `/blog-details.html/${encodedTitleParam}`;
+                // window.history.replaceState({}, '', `blog-details.html/${titleParam}`);
 
+
+
+                // const newUrl = window.location.pathname  + titleParam;
+                // window.history.replaceState({}, '', titleParam);  
+
+                const blodDetilsH1=document.getElementById('tittle-of-blog')
+                const breadGram=document.createTextNode(formattedTitleParam)
+                blodDetilsH1.appendChild(breadGram)        
 
 let blogsData = [];
 let recentBlogData=[];
@@ -19,7 +32,7 @@ function isVideo(url) {
     .then((response) => response.json())
     .then((data) => {
       blogsData = data.allBlogs;
-      recentBlogData =data.recentBlogs;
+      recentBlogData =data.allRecentBlogs;
       console.log('data', data);
       console.log(blogsData.allBlogs);
       blogsData.forEach((blogdata) => {
@@ -151,3 +164,22 @@ function isVideo(url) {
       console.error("Error fetching data:", error);
     });
 
+    // window.history.pushState({}, '', '/blog.html');
+
+    // window.addEventListener('unload', function() {
+    //   window.history.go(-2);
+    //   window.history.pushState({}, '', '../blog.html');
+    // });
+    
+    // window.addEventListener('beforeunload', function(event) {
+    //   // Remove the last two entries from the history stack
+    //   window.history.go(-2);
+    
+    //   // Push a new state without changing the URL
+    //   window.history.replaceState({}, '', `${oldUrl}?id=${titleParam}`);
+    
+    //   // Custom message (optional)
+    //   // event.returnValue = 'Are you sure you want to leave this page?';
+    // });
+    
+    

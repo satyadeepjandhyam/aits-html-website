@@ -170,7 +170,7 @@ class FooterTemplate extends HTMLElement {
              </form>
            </div>
            <img
-             src="./assets/img/shape/close-icon.png"
+             src="../assets/img/shape/close-icon.png"
              alt="close-button"
              class="pop-up-form-close-btn"
            />
@@ -326,7 +326,7 @@ class FooterTemplate extends HTMLElement {
  fetch('https://admin.analogueitsolutions.satyasadhna.com/allblogs')
   .then(response => response.json())
   .then(data => {
-      recentData = data.recentBlogs.slice(0, 2); 
+      recentData = data.allRecentBlogs.slice(0, 2); 
       recentData.forEach(blog => {
           const { _id, date, title, subPicOne } = blog;
 

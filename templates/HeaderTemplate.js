@@ -11,7 +11,7 @@ class HeaderTemplate extends HTMLElement {
         <button class="ot-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
           <a href="/"
-            ><img src="assets/img/Logo white background.png" alt="Tronix"
+            ><img src="../assets/img/Logo white background.png" alt="Tronix"
           /></a>
         </div>
 
@@ -200,7 +200,7 @@ class HeaderTemplate extends HTMLElement {
         </button>
         <button  class="pop-up-sidebar position-contact-btn1 con-btn"> Get A Quote
           
-          <img src="assets/img/side-contact/contact-icon.png" alt="contact-img"/>
+          <img src="../assets/img/side-contact/contact-icon.png" alt="contact-img"/>
         </button>
       </div>
 
@@ -247,7 +247,7 @@ class HeaderTemplate extends HTMLElement {
                   <a href="/"
                     ><img
                       class="header-logo-img"
-                      src="assets/img/Logo white background.png"
+                      src="../assets/img/Logo white background.png"
                       alt="Analogue IT Solutions"
                   /></a>
                 </div>
@@ -262,11 +262,22 @@ class HeaderTemplate extends HTMLElement {
                     <li class="menu-item-has-children">
                       <a href="#">Service</a>
                       <ul class="sub-menu">
-                        <li>
-                          <a href="mobile-app-development-company-in-hyderabad"
-                            >Mobile Development</a
+                      <li>
+                          <a href="android-app-development"
+                            >Android App Development</a
                           >
                         </li>
+                        <li>
+                          <a href="ios-app-development"
+                            >IOS App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="flutter-app-developent"
+                            >Flutter App Development</a
+                          >
+                        </li>
+                       
                         <li>
                           <a href="website-development-company-in-hyderabad"
                             >Web Development</a
