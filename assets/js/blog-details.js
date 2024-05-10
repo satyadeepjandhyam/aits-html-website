@@ -1,7 +1,14 @@
 const urlParams = new URLSearchParams(window.location.search);
 const oldUrl = window.location.pathname;
 console.log("oldurl",urlParams);
-const titleParam = window.location.hash.substring(1);
+let titleParam=""
+if( urlParams.get('id')){
+   titleParam = urlParams.get('id');
+}
+else{
+  titleParam = window.location.hash.substring(1);
+
+}
                 // const titleParam = urlParams.get('id'); // Get the 'id' parameter from the URL
                 const formattedTitleParam = titleParam.replace(/-/g, ' '); // Replace dashes with spaces
 
@@ -82,7 +89,7 @@ function isVideo(url) {
 
         const blogMeta=document.getElementById('blog-meta-detials')
         const blogDateA = document.createElement('a');
-        blogDateA.href = `blog-details.html?id=${title}`;
+        blogDateA.href = "#";
         const textNode = document.createTextNode(formattedDate);
         const blogDateIcon = document.createElement('i');
         blogDateIcon.classList.add('far', 'fa-calendar');
@@ -129,7 +136,7 @@ function isVideo(url) {
         }
 
         const blogLink = document.createElement('a');
-        blogLink.href = `blog-details.html?id=${title}`;
+        blogLink.href = `#`;
         blogLink.classList.add('text-inherit');
         blogLink.innerText = title;
 
@@ -149,12 +156,13 @@ function isVideo(url) {
         const month = monthNames[dateObj.getMonth()];
         const year = dateObj.getFullYear();
         const formattedDate = `${day} ${month}, ${year}`;
+        const formattedTitle = title.replace(/ /g, '-');
 
         const blogItem = document.createElement('div');
         blogItem.classList.add('recent-post');
         blogItem.innerHTML = `
             <div class="media-img">
-                <a href="blog-details.html?id=${title}"><img src="https://admin.analogueitsolutions.satyasadhna.com/${subPicOne}" alt="Blog Image"></a>
+                <a href="blogs.html?id=${formattedTitle}"><img src="https://admin.analogueitsolutions.satyasadhna.com/${subPicOne}" alt="Blog Image"></a>
             </div>
             <div class="media-body">
                 <h4 class="post-title">${title}</h4>

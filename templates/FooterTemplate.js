@@ -329,7 +329,7 @@ class FooterTemplate extends HTMLElement {
       recentData = data.recentBlogs.slice(0, 2); 
       recentData.forEach(blog => {
           const { _id, date, title, subPicOne } = blog;
-
+          const formattedTitle = title.replace(/ /g, '-');
           const apiDate = date
         const dateObj = new Date(apiDate);
         const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -357,7 +357,7 @@ class FooterTemplate extends HTMLElement {
           blogItem.classList.add('recent-post');
           blogItem.innerHTML = `
             <div class="media-img">
-              <a href="blog-details.html?id=${title}"><img src="https://admin.analogueitsolutions.satyasadhna.com/${subPicOne}" alt="Blog Image"></a>
+              <a href=""blogs.html?id=${formattedTitle}"><img src="https://admin.analogueitsolutions.satyasadhna.com/${subPicOne}" alt="Blog Image"></a>
             </div>
             <div class="media-body">
               <h4 class="post-title">${blogLink.outerHTML}</h4>

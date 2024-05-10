@@ -183,6 +183,7 @@ class HeaderTemplate extends HTMLElement {
                 </li>
               </ul>
             </li>
+            <li><a href="blog">Blogs</a></li>
             <li><a href="contact">Contact</a></li>
           </ul>
         </div>
