@@ -326,7 +326,7 @@ class FooterTemplate extends HTMLElement {
  fetch('https://admin.analogueitsolutions.satyasadhna.com/allblogs')
   .then(response => response.json())
   .then(data => {
-      recentData = data.allRecentBlogs.slice(0, 2); 
+      recentData = data.recentBlogs.slice(0, 2); 
       recentData.forEach(blog => {
           const { _id, date, title, subPicOne } = blog;
 

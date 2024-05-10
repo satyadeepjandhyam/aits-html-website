@@ -28,7 +28,7 @@ function fetchData(page) {
   fetch(urlApi)
     .then((response) => response.json())
     .then((data) => {
-      blogsData = data.allBlogs || data.message
+      blogsData = data.allblogs || data.message
       totalItemsExpected = data.totalCount; // Update totalItemsExpected with the total count from the API
       console.log('data', data);
       console.log(blogsData.allBlogs);
@@ -44,7 +44,7 @@ function fetchData(page) {
 
         const mainImga = document.createElement('a');
         const formattedTitle = title.replace(/ /g, '-');
-        mainImga.href = `./blogs/blog-details.html?id=${formattedTitle}`;
+        mainImga.href = `./blogs.html#${formattedTitle}`;
         let mediaElement;
         if (isVideo(filenameWithExtension)) {
           mediaElement = document.createElement('video');
@@ -83,13 +83,13 @@ function fetchData(page) {
         const blogMeta = document.createElement('div');
         blogMeta.classList.add('blog-meta');
         const blogDateA = document.createElement('a');
-        blogDateA.href = `./blogs/blog-details.html?id=${formattedTitle}`;
+        blogDateA.href = `./blogs.html#${formattedTitle}`;
         const textNode = document.createTextNode(formattedDate);
         const blogDateIcon = document.createElement('i');
         blogDateIcon.classList.add('far', 'fa-calendar');
         const blogAuthor = document.createElement('a');
         blogAuthor.classList.add('author');
-        blogAuthor.href = `./blogs/blog-details.html?id=${formattedTitle}`;
+        blogAuthor.href = `./blogs.html#${formattedTitle}`;
         const textNodeAuthor = document.createTextNode("By Analogue");
         const authorIcon = document.createElement('i');
         authorIcon.classList.add('far', 'fa-user');
@@ -105,7 +105,7 @@ function fetchData(page) {
         const blogTittle = document.createElement('h2');
         blogTittle.classList.add('blog-title');
         const blogTittlea = document.createElement('a');
-        blogTittlea.href = `./blogs/blog-details.html?id=${formattedTitle}`;
+        blogTittlea.href = `./blogs.html#${formattedTitle}`;
         const textNodeTittle = document.createTextNode(title);
 
         blogTittle.appendChild(blogTittlea);
@@ -119,7 +119,7 @@ function fetchData(page) {
         blogContentDiv.appendChild(blogText);
 
         const read = document.createElement('a');
-        read.href = `./blogs/blog-details.html?id=${formattedTitle}`;
+        read.href = `./blogs.html#${formattedTitle}`;
         read.classList.add('link-btn');
         const readTextNode = document.createTextNode("Read More");
         const readIcon = document.createElement('i');

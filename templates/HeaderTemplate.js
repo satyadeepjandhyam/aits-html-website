@@ -11,7 +11,7 @@ class HeaderTemplate extends HTMLElement {
         <button class="ot-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
           <a href="/"
-            ><img src="../assets/img/Logo white background.png" alt="Tronix"
+            ><img src="./assets/img/logoMain.png" alt="Tronix"
           /></a>
         </div>
 
@@ -245,9 +245,9 @@ class HeaderTemplate extends HTMLElement {
               >
                 <div class="header-logo w-100">
                   <a href="/"
-                    ><img
+                    ><img 
                       class="header-logo-img"
-                      src="../assets/img/Logo white background.png"
+                      src="./assets/img/logoMain.png"
                       alt="Analogue IT Solutions"
                   /></a>
                 </div>

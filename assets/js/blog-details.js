@@ -1,11 +1,16 @@
 const urlParams = new URLSearchParams(window.location.search);
 const oldUrl = window.location.pathname;
-                const titleParam = urlParams.get('id'); // Get the 'id' parameter from the URL
+console.log("oldurl",urlParams);
+const titleParam = window.location.hash.substring(1);
+                // const titleParam = urlParams.get('id'); // Get the 'id' parameter from the URL
                 const formattedTitleParam = titleParam.replace(/-/g, ' '); // Replace dashes with spaces
 
                 
 console.log(formattedTitleParam, "title")
-                console.log(titleParam)
+
+
+//                 console.log(titleParam)
+                sessionStorage.setItem('originalUrl', formattedTitleParam);
 
                 // const encodedTitleParam = encodeURIComponent(`/${titleParam}`);
                 // const newUrl = `/blog-details.html/${encodedTitleParam}`;
@@ -14,7 +19,8 @@ console.log(formattedTitleParam, "title")
 
 
                 // const newUrl = window.location.pathname  + titleParam;
-                // window.history.replaceState({}, '', titleParam);  
+    
+                // window.history.replaceState(null, '', titleParam);  
 
                 const blodDetilsH1=document.getElementById('tittle-of-blog')
                 const breadGram=document.createTextNode(formattedTitleParam)
@@ -31,8 +37,8 @@ function isVideo(url) {
   fetch(`https://admin.analogueitsolutions.satyasadhna.com/allblogs`)
     .then((response) => response.json())
     .then((data) => {
-      blogsData = data.allBlogs;
-      recentBlogData =data.allRecentBlogs;
+      blogsData = data.allblogs;
+      recentBlogData =data.recentBlogs;
       console.log('data', data);
       console.log(blogsData.allBlogs);
       blogsData.forEach((blogdata) => {
@@ -171,15 +177,47 @@ function isVideo(url) {
     //   window.history.pushState({}, '', '../blog.html');
     // });
     
-    // window.addEventListener('beforeunload', function(event) {
-    //   // Remove the last two entries from the history stack
-    //   window.history.go(-2);
     
-    //   // Push a new state without changing the URL
-    //   window.history.replaceState({}, '', `${oldUrl}?id=${titleParam}`);
+
+    window.addEventListener('beforeunload', function(event) {
+      // Remove the last two entries from the history stack
+      window.history.go(-2);
     
-    //   // Custom message (optional)
-    //   // event.returnValue = 'Are you sure you want to leave this page?';
-    // });
+      // Push a new state without changing the URL
+      window.history.replaceState({}, '', `${oldUrl}?id=${titleParam}`);
     
+      // Custom message (optional)
+      // event.returnValue = 'Are you sure you want to leave this page?';
+    });
     
+    // const newUrl = 'new-url'; // Specify the new URL here
+
+// Change the URL without reloading
+// history.pushState({}, '', newUrl);
+
+// Add an event listener for the window load event
+console.log("Dfcgxdfg");
+
+    // Add an event listener for the window load event
+
+  // Check if the current URL is different from the original URL
+//   let store=sessionStorage.getItem('originalUrl')
+
+//   if (store!=="")
+//  { window.addEventListener('afterload', function() {
+//    console.log("store",store);
+//     // Check if the current URL is different from the original URL
+//     // const urlParams = new URLSearchParams(window.location.search);
+//     // const titleParam = urlParams.get('id');
+//     // const formattedTitleParam = titleParam.replace(/-/g, ' ');
+//     if (window.location.pathname !== oldUrl && store!=="" ) {
+//       // Restore the original URL if the current URL has changed and the 'id' parameter matches
+//       history.replaceState({}, '', `${oldUrl}?id=${titleParam}`);
+//       history.replaceState({}, '', `${titleParam}`);
+//       window.history.go(-1);
+//       store="";
+//       console.log("store",store);
+//   sessionStorage.removeItem('originalUrl')
+//     }
+//   });}
+  
