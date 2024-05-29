@@ -49,7 +49,13 @@ function isVideo(url) {
       console.log('data', data);
       console.log(blogsData.allBlogs);
       blogsData.forEach((blogdata) => {
-        const { _id, createdAt, mainContent, date, title, subPicOne,subPicTwo,subContent, mainPic } = blogdata;
+        const { _id, createdAt, mainContent, date, title, subPicOne,subPicTwo,subContent, mainPic,
+          additionalContent1,additionalTitle1,additionalContent2,additionalTitle2,
+          additionalContent3,additionalTitle3,additionalContent4,additionalTitle4,
+          additionalContent5,additionalTitle5,additionalContent6,additionalTitle6,
+          additionalContent7,additionalTitle7,additionalContent8,additionalTitle8,
+          additionalContent9,additionalTitle9,additionalContent10,additionalTitle10,
+         } = blogdata;
         const apiDate = date
         const dateObj = new Date(apiDate);
         const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -100,6 +106,8 @@ function isVideo(url) {
         const authorIcon = document.createElement('i');
         authorIcon.classList.add('far', 'fa-user');
 
+
+
         blogMeta.appendChild(blogDateA);
         blogDateA.appendChild(blogDateIcon);
         blogDateA.appendChild(textNode);
@@ -133,6 +141,39 @@ function isVideo(url) {
         const apiResponsesub = subContent;
         const subDescreption =document.getElementById('sub-descreption')
         subDescreption.innerHTML = apiResponsesub;
+
+        const dataArray = [
+          { content: additionalContent1, title: additionalTitle1 },
+          { content: additionalContent2, title: additionalTitle2 },
+          { content: additionalContent3, title: additionalTitle3 },
+          { content: additionalContent4, title: additionalTitle4 },
+          { content: additionalContent5, title: additionalTitle5 },
+          { content: additionalContent6, title: additionalTitle6 },
+          { content: additionalContent7, title: additionalTitle7 },
+          { content: additionalContent8, title: additionalTitle8 },
+          { content: additionalContent9, title: additionalTitle9 },
+          { content: additionalContent10, title: additionalTitle10 },
+        ];
+        
+        console.log(dataArray);
+        
+        const additionalContent = document.getElementById('additional-content');
+        dataArray.forEach((each) => {
+          if (each.content && each.title) {
+            const blogDate = document.createElement('div');
+            blogDate.classList.add('add-1');
+            const head = document.createElement('h3');
+            const dataTitle = document.createTextNode(each.title);
+            head.appendChild(dataTitle);
+            const para = document.createElement('p');
+            const dataPara = document.createTextNode(each.content);
+            para.appendChild(dataPara);
+            blogDate.appendChild(head);
+            blogDate.appendChild(para);
+            additionalContent.appendChild(blogDate);
+          }
+        });
+        
         }
 
         const blogLink = document.createElement('a');
@@ -143,6 +184,8 @@ function isVideo(url) {
         const blogDate = document.createElement('div');
         blogDate.classList.add('recent-post-meta');
         blogDate.innerHTML = `<i class="far fa-calendar"></i> ${formattedDate}`;
+// console.log(additionalContent1,additionalContent2,additionalContent3);
+
     })
 
     const recentPostWrapBlogdetials = document.getElementById('recent-post-wrap-blogdetials');

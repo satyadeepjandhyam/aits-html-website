@@ -36,6 +36,20 @@ class HeaderTemplate extends HTMLElement {
             <li class="menu-item-has-children">
               <a href="#">Service</a>
               <ul class="sub-menu">
+              <li>
+              <a href="android-app-development"
+                            >Android App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="ios-app-development"
+                            >IOS App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="flutter-app-developent"
+                            >Flutter App Development</a
+                          ></li>
                 <li>
                   <a href="mobile-app-development-company-in-hyderabad"
                     >Mobile App Development</a
@@ -277,7 +291,20 @@ class HeaderTemplate extends HTMLElement {
                     <li class="menu-item-has-children">
                       <a href="#">Service</a>
                       <ul class="sub-menu">
-                      
+                      <li>
+              <a href="android-app-development"
+                            >Android App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="ios-app-development"
+                            >IOS App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="flutter-app-developent"
+                            >Flutter App Development</a
+                          ></li>
                        
                         <li>
                           <a href="website-development-company-in-hyderabad"
